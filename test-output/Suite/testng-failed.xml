@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.crm.GenericLibrary.ListerImplementationClass"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.crm.OrganizationTests.CreateOrgTest">
+        <methods>
+          <include name="closeDb"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="connectDataBase"/>
+          <include name="launchBrowser"/>
+          <include name="login"/>
+          <include name="createOrgTest"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTests.CreateOrgTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
